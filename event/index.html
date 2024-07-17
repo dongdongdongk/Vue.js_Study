@@ -21,7 +21,7 @@
       <button v-on:click="add(10)">Add</button>
       <button v-on:click.left="reduce(10)">Reduce</button>
       <p>Result: {{ counter }}</p>
-      <input type="text" v-on:input="setName"/>
+      <input type="text" v-on:input="setName" v-on:keyup.enter="confirmInput"/>
       <p>Your name : {{ confirmedName }}</p>
 
       <form v-on:submit.prevent="submitForm">
